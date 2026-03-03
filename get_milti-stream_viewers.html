@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Live Viewers Dock</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: #111;
+        font-family: Arial, sans-serif;
+        overflow: hidden; /* absolutely no scrolling */
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 8px;
+        height: 100%;
+    }
+
+    .widget {
+        flex: 1 1 0;
+        min-height: 0; /* critical for preventing overflow */
+        background: #1a1a1a;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        overflow: hidden;
+        display: flex;
+    }
+
+    iframe {
+        border: none;
+        width: 100%;
+        height: 100%;
+    }
+</style>
+</head>
+<body>
+
+<div class="widget">
+    <iframe src="put your botrix Viewers widget link here"></iframe>
+</div>
+
+<div class="widget">
+    <iframe src="put your botrix Viewers widget link here"></iframe>
+</div>
+
+<div class="widget">
+    <iframe src="put your botrix Viewers widget link here"></iframe>
+</div>
+
+</body>
+</html>
